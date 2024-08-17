@@ -1,9 +1,8 @@
-let hamburger = document.querySelector(".icon");
-let navLinks = document.querySelector(".nav-links");
-let links = document.querySelectorAll(".link");
-let container = document.querySelector(".container");
-let projectDemo = document.querySelector(".demo-project-container");
-console.log(projectDemo);
+const hamburger = document.querySelector(".icon");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".link");
+const container = document.querySelector(".container");
+const projectDemo = document.querySelector(".demo-project-container");
 
 function toggleNavMenu() {
   if (navLinks.classList.contains("active")) {
