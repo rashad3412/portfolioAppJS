@@ -17,8 +17,9 @@
     />
 
     <link rel="stylesheet" href="StyleSheets/main.css" />
+    <link rel="stylesheet" href="StyleSheets/contact.css" />
 
-    <title>Home</title>
+    <title>Contact</title>
   </head>
   <body>
     <header>
@@ -47,15 +48,22 @@
         ></a>
       </nav>
     </header>
-    <section class="main-content-section">
-      <h2>Hello, My Name Is Rashad Edwards</h2>
-      <h3>Im a Frontend Web Developer and a UI Designer</h3>
-      <button>Projects</button>
-      <button>LinkedIn</button>
-      <!-- Using JavaScript to render circle on the index page -->
-      <div class="container"></div>
+    <section class="contact-section">
+      <h1>Contact Me</h1>
+      <article class="contact-info">
+        <form action="#" class="contact-form">
+          <input type="text" id="fullName" name="name" placeholder="Name" />
+          <br />
+          <input type="text" id="email" placeholder="Email" />
+          <br />
+          <input type="text" id="company" placeholder="Company" />
+          <br />
+          <input type="text" id="comments" placeholder="Comments" />
+          <br />
+          <input type="submit" name="" id="submit" />
+        </form>
+      </article>
     </section>
-
-    <script src="./JsFiles/index.js"></script>
+    <script src="./JsFiles/contact.js"></script>
   </body>
 </html>
