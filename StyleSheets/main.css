@@ -111,7 +111,7 @@ a {
 
 .main-content-section {
   position: relative;
-  width: 328px;
+  width: 350px;
   margin-left: 10px;
   margin-top: 100px;
   /* border: solid black 2px; */
@@ -135,7 +135,7 @@ a {
   font-weight: 200;
   margin-top: 15px;
   font-size: 1rem;
-  width: 100px;
+  width: 125px;
   border-radius: 10px;
   color: #063c52;
   background-color: #e4f392;
@@ -143,6 +143,7 @@ a {
 }
 
 /* Dynamically created circles using JavaScript in the index.js file and manually edited each circle */
+
 .container {
   display: flex;
   flex-wrap: wrap;

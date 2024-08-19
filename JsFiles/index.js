@@ -1,5 +1,4 @@
 const hamburger = document.querySelector(".icon");
-console.log(hamburger);
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".link");
 const content = document.querySelector(".main-content-section");
