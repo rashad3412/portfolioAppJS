@@ -4,6 +4,7 @@ const links = document.querySelectorAll(".link");
 const container = document.querySelector(".container");
 const projectDemo = document.querySelector(".demo-project-container");
 
+// function to toggle between active class for hamburger menu
 function toggleNavMenu() {
   if (navLinks.classList.contains("active")) {
     navLinks.classList.remove("active");
@@ -16,6 +17,7 @@ function toggleNavMenu() {
   }
 }
 
+// When hamburgerIcon is clicked the toggleNavMenu function will be fired.
 hamburger.addEventListener("click", () => {
   toggleNavMenu();
 });

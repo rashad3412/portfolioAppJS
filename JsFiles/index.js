@@ -1,9 +1,11 @@
 const hamburger = document.querySelector(".icon");
+console.log(hamburger);
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".link");
 const content = document.querySelector(".main-content-section");
 const container = document.querySelector(".container");
 
+// function to toggle between active class for hamburger menu
 function toggleNavMenu() {
   if (navLinks.classList.contains("active")) {
     navLinks.classList.remove("active");
@@ -16,12 +18,14 @@ function toggleNavMenu() {
   }
 }
 
+// When hamburgerIcon is clicked the toggleNavMenu function will be fired.
 hamburger.addEventListener("click", () => {
   toggleNavMenu();
 });
 
 toggleNavMenu();
 
+// A function that will add circles to the page.
 function addCircles(numberOfCircles) {
   for (let i = 0; i < numberOfCircles; i++) {
     const circle = document.createElement("div");

@@ -1,3 +1,5 @@
+/* Alginment of about.html section with fonts and many other properties  */
+
 .about-section {
   display: flex;
   flex-direction: column;
