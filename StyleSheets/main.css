@@ -94,7 +94,7 @@ a {
   height: 200px;
   bottom: 81%;
   left: 80%;
-  transform: translate(-25px, 25px);
+  transform: translate(-25px, -45px);
   z-index: -1;
 }
 
@@ -113,7 +113,7 @@ a {
   position: relative;
   width: 350px;
   margin-left: 10px;
-  margin-top: 100px;
+  margin-top: 150px;
   /* border: solid black 2px; */
 }
 
@@ -133,7 +133,7 @@ a {
 .main-content-section button {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 1rem;
   width: 125px;
   border-radius: 10px;
@@ -168,28 +168,28 @@ a {
 .container :nth-child(2) {
   position: absolute;
   bottom: 10px;
-  top: -15%;
+  top: -20%;
   z-index: -1;
   transform: translateX(15em);
 }
 .container :nth-child(3) {
   position: absolute;
   bottom: 10px;
-  top: 6em;
+  top: 25%;
   z-index: -1;
   transform: translateX(21em);
 }
 .container :nth-child(4) {
   position: absolute;
   bottom: 10px;
-  top: 10em;
+  top: 170%;
   z-index: -1;
   transform: translateX(14em);
 }
 .container :nth-child(5) {
   position: absolute;
   bottom: 10px;
-  top: 100%;
+  top: 125%;
   z-index: -1;
   transform: translateX(18em);
 }

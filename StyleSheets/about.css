@@ -5,9 +5,10 @@
   flex-direction: column;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  margin-top: 20%;
+  font-size: 20px;
+  margin-top: 40%;
   margin-left: 10px;
-  width: 300px;
+  width: 350px;
   height: 210px;
 }
 .about-section h2 {
@@ -16,6 +17,7 @@
 
 .about-section button {
   display: flex;
+  font-size: 15px;
   color: #063c52;
   justify-content: center;
   margin-top: 15px;
