@@ -34,3 +34,5 @@ function addCircles(numberOfCircles) {
 }
 
 addCircles(7);
+
+// function to remove circles

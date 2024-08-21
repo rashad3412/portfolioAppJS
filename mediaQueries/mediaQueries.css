@@ -1,0 +1,41 @@
+@media only screen and (min-width: 768px) {
+  .main-content-section {
+    position: relative;
+    top: 175px;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .container div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+  }
+
+  .container :nth-child(1) {
+    left: -100px;
+  }
+  .container :nth-child(2) {
+    right: 200px;
+  }
+  .container :nth-child(3) {
+    display: none;
+  }
+
+  .container :nth-child(5) {
+    left: 95px;
+  }
+  .container :nth-child(6) {
+    left: -100px;
+  }
+  .container :nth-child(7) {
+    left: -100px;
+  }
+
+  .circle-one {
+    transform: translate(-2px, -45px);
+  }
+  .circle-two {
+    transform: translate(50px, -20px);
+  }
+}
