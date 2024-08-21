@@ -1,3 +1,5 @@
+/* Main content/Homepage Section media query at 768px */
+
 @media only screen and (min-width: 768px) {
   .main-content-section {
     position: relative;
@@ -21,6 +23,9 @@
   .container :nth-child(3) {
     display: none;
   }
+  .container :nth-child(4) {
+    left: 200px;
+  }
 
   .container :nth-child(5) {
     left: 95px;
@@ -29,7 +34,7 @@
     left: -100px;
   }
   .container :nth-child(7) {
-    left: -100px;
+    left: -150px;
   }
 
   .circle-one {
@@ -37,5 +42,63 @@
   }
   .circle-two {
     transform: translate(50px, -20px);
+  }
+}
+
+/* Header Section Media query at 768px */
+
+@media only screen and (min-width: 768px) {
+  .nav-links {
+    top: 125px;
+  }
+  .nav-links .link {
+    font-weight: 200;
+    font-size: 1.8em;
+  }
+}
+
+/* Project Section Media Query at 768px */
+@media only screen and (min-width: 768px) {
+  #project-h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  .demo {
+    width: 400px;
+  }
+}
+
+/* About Section Media Query at 768px */
+
+@media only screen and (min-width: 768px) {
+  .about-section {
+    position: relative;
+    width: 600px;
+    top: 150px;
+    margin: 0 auto;
+  }
+
+  .about-section-circle :nth-child(1) {
+    transform: translateY(-7em);
+  }
+  .about-section-circle :nth-child(2) {
+    transform: translateY(15em);
+  }
+  .about-section-circle :nth-child(3) {
+    margin-top: 30%;
+  }
+  .about-section-circle :nth-child(4) {
+    position: relative;
+    top: 100px;
+  }
+  .about-section-circle :nth-child(5) {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-section article {
+    width: 400px;
+    height: 400px;
   }
 }
