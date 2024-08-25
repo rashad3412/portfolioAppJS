@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -11,7 +12,6 @@ html {
 }
 
 body {
-  margin: 0 auto;
   max-width: 1024px;
   background-color: #063c52;
 }
@@ -228,8 +228,13 @@ a {
   left: 100px;
   display: flex;
   gap: 30px;
+  margin-right: 45px;
 }
 
 .link-2 {
   color: white;
+}
+
+#main-content-text {
+  margin-right: 10px;
 }

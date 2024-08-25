@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +58,7 @@
         <ul>
           <div class="link-container-2">
             <a href="index.html" class="link-2">Home</a>
-            <a href="project.html" class="link-2">Projects</a>
+            <a href="project.html" id="project-link" class="link-2">Projects</a>
             <a href="about.html" class="link-2">About</a>
             <a href="contact.html" class="link-2">Contact</a>
           </div>
@@ -72,12 +75,19 @@
     <section class="main-content-section">
       <div class="main">
         <div class="main-2">
-          <h2>Hello, My Name Is Rashad Edwards</h2>
-          <h3>Im a Frontend Web Developer and a UI Designer</h3>
-          <button id="figma-button">Figma Design</button>
-          <button>LinkedIn</button>
+          <div id="main-content-wrapper">
+            <div id="main-content-text">
+              <h2>Hello, My Name Is Rashad Edwards</h2>
+              <h3>Im a Frontend Web Developer and a UI Designer</h3>
+              <button id="figma-button">Figma Design</button>
+              <button>LinkedIn</button>
+            </div>
+            <div class="main-content-circle"></div>
+          </div>
+          <div id="project-component"></div>
         </div>
-        <div class="main-content-circle"></div>
+        <div id="about-section"></div>
+        <div id="contact-section"></div>
       </div>
       <!-- Using JavaScript to render circle on the index page -->
       <div class="container"></div>

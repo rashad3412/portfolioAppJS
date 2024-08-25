@@ -135,6 +135,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
   #header-h1 {
     display: none;
   }
@@ -150,9 +154,8 @@
   .main-content-section {
     margin: 0 auto;
     position: relative;
-
     top: 95px;
-    width: 100%;
+    width: 110%;
     bottom: 500px;
   }
 
@@ -163,7 +166,13 @@
     padding-right: 25px;
   }
 
+  #main-content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   .main-content-circle {
+    padding-left: 10px;
     background-color: #e4f392;
     width: 450px;
     height: 450px;
@@ -178,9 +187,10 @@
   .demo-project-container {
     display: flex;
     flex-direction: row;
-    max-width: 75%;
     margin: 0 auto;
     gap: 20px;
+    margin: auto 0;
+    margin-right: 85px;
   }
 
   .demo {
@@ -241,5 +251,16 @@
   #comments {
     margin: 0 auto;
     width: 300px;
+  }
+
+  #project-section-header .navbar-2 {
+    display: none;
+  }
+
+  #project-wrapper {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
   }
 }
