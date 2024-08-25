@@ -11,6 +11,8 @@ html {
 }
 
 body {
+  margin: 0 auto;
+  max-width: 1024px;
   background-color: #063c52;
 }
 
@@ -205,4 +207,29 @@ a {
   top: 20px;
   z-index: -1;
   transform: translateX(40px);
+}
+
+.navbar-2 {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid #e4f392 4px;
+}
+
+#header-h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.link-container-2 {
+  position: relative;
+  left: 100px;
+  display: flex;
+  gap: 30px;
+}
+
+.link-2 {
+  color: white;
 }

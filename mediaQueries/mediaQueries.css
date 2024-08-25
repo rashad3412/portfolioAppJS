@@ -102,3 +102,144 @@
     height: 400px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .circle-one,
+  .circle-two {
+    display: none;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    color: white;
+  }
+
+  .nav-links .link {
+    color: aliceblue;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .navbar-2 {
+    display: none;
+  }
+
+  .main-content-circle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #header-h1 {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .main-content-section {
+    margin: 0 auto;
+    position: relative;
+
+    top: 95px;
+    width: 100%;
+    bottom: 500px;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .main-content-circle {
+    background-color: #e4f392;
+    width: 450px;
+    height: 450px;
+    border: solid black 2px;
+    border-radius: 50%;
+  }
+
+  #project-h1 {
+    top: 22%;
+  }
+
+  .demo-project-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 75%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .demo {
+    margin-top: 185px;
+    height: 275px;
+  }
+
+  .about-section-circle {
+    display: none;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 900px;
+  }
+
+  #about-me-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  #about-section-paragraph {
+    font-size: 1.5em;
+    padding-left: 50px;
+    width: 750px;
+    font-weight: 200;
+  }
+
+  #contact-section-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 300px;
+    left: 50px;
+    margin: 0 auto;
+    width: 400px;
+  }
+  #contact-section-info {
+    position: relative;
+    right: 200px;
+  }
+
+  .contact-section article {
+    width: 550px;
+  }
+  .contact-form {
+    width: 300px;
+  }
+
+  #comments {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
