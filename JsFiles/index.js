@@ -3,7 +3,11 @@ const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".link");
 const content = document.querySelector(".main-content-section");
 const container = document.querySelector(".container");
-const projectPage = document.getElementById("#projects-section");
+const menuIcon = document.querySelector(".icon");
+const navLinks2 = document.querySelector(".nav-links");
+const projectComponent = document.getElementById("project-component");
+const aboutSection = document.getElementById("about-section");
+const projectLink = document.getElementById("project-link");
 
 // function to toggle between active class for hamburger menu
 function toggleNavMenu() {
@@ -18,15 +22,11 @@ function toggleNavMenu() {
   }
 }
 
-// When hamburgerIcon is clicked the toggleNavMenu function will be fired.
 hamburger.addEventListener("click", () => {
   toggleNavMenu();
 });
 
 toggleNavMenu();
-
-const menuIcon = document.querySelector(".icon");
-const navLinks2 = document.querySelector(".nav-links");
 
 menuIcon.addEventListener("click", () => {
   navLinks2.classList.toggle("active");
@@ -44,47 +44,59 @@ function addCircles(numberOfCircles) {
 addCircles(7);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectComponent = document.getElementById("project-component");
+  const projectLink = document.getElementById("project-link");
+  const aboutLink = document.getElementById("about-link");
+  const projectSection = document.getElementById("project-component");
+  const aboutSection = document.getElementById("about-section");
 
-  // Function to load project.html content
-  function loadProjectComponent() {
-    fetch("project.html")
+  // Function to load a component
+  function loadComponent(component, url) {
+    fetch(url)
       .then((response) => response.text())
       .then((data) => {
-        projectComponent.innerHTML = data;
+        component.innerHTML = data;
       })
-      .catch((error) => console.log("Error loading Project Component:", error));
+      .catch((error) => console.error("Error loading component:", error));
   }
 
-  // Check screen size on initial load
-  if (window.innerWidth >= 1024) {
-    loadProjectComponent();
-  }
-
-  // Check screen size on window resize
-  window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024) {
-      loadProjectComponent();
-      projectComponent.style.display = "block";
-      projectSectionHeader.style.display = "none";
-    } else {
-      projectComponent.style.display = "none";
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const projectLink = document.getElementById("project-link");
-
-  const projectSection = document.getElementById("project-component");
-
-  projectLink.addEventListener("click", (e) => {
-    if (window.innerWidth >= 1024) {
+  // Function to handle smooth scrolling
+  function handleScroll(e, section) {
+    if (window.innerWidth >= 1024 && section) {
       e.preventDefault();
-      projectSection.scrollIntoView({
-        behavior: "auto",
+      section.scrollIntoView({
+        behavior: "smooth",
       });
-    } else {
     }
-  });
+  }
+
+  // Function to handle window resize events
+  function windowResize() {
+    if (window.innerWidth >= 1024) {
+      loadComponent(projectSection, "project.html");
+      loadComponent(aboutSection, "about.html");
+      projectSection.style.display = "block";
+      aboutSection.style.display = "block";
+    } else {
+      // Hide or clear the components when the width is less than 1024px
+      projectSection.style.display = "none";
+      aboutSection.style.display = "none";
+    }
+  }
+
+  // Add event listeners for scrolling
+  if (projectLink && projectSection) {
+    projectLink.addEventListener("click", (e) =>
+      handleScroll(e, projectSection)
+    );
+  }
+
+  if (aboutLink && aboutSection) {
+    aboutLink.addEventListener("click", (e) => handleScroll(e, aboutSection));
+  }
+
+  // Call windowResize on initial load
+  windowResize();
+
+  // Listen for window resize events
+  window.addEventListener("resize", windowResize);
 });
