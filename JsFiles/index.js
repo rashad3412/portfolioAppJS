@@ -46,8 +46,10 @@ addCircles(7);
 document.addEventListener("DOMContentLoaded", () => {
   const projectLink = document.getElementById("project-link");
   const aboutLink = document.getElementById("about-link");
+  const contactLink = document.getElementById("contact-link");
   const projectSection = document.getElementById("project-component");
   const aboutSection = document.getElementById("about-section");
+  const contactSection = document.getElementById("contact-section");
 
   // Function to load a component
   function loadComponent(component, url) {
@@ -74,12 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth >= 1024) {
       loadComponent(projectSection, "project.html");
       loadComponent(aboutSection, "about.html");
+      loadComponent(contactSection, "contact.html");
       projectSection.style.display = "block";
       aboutSection.style.display = "block";
+      contactSection.style.display = "block";
     } else {
       // Hide or clear the components when the width is less than 1024px
       projectSection.style.display = "none";
       aboutSection.style.display = "none";
+      contactSection.style.display = "none";
     }
   }
 
@@ -92,6 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (aboutLink && aboutSection) {
     aboutLink.addEventListener("click", (e) => handleScroll(e, aboutSection));
+  }
+  if (contactLink && contactSection) {
+    contactLink.addEventListener("click", (e) =>
+      handleScroll(e, contactSection)
+    );
   }
 
   // Call windowResize on initial load

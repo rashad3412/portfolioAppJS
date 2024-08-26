@@ -238,26 +238,34 @@
     border-bottom: solid #e4f392 2px;
   }
 
-  #contact-section-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    top: 300px;
-    left: 50px;
-    margin: 0 auto;
-    width: 400px;
+  #contact-section-header .navbar-2 {
+    display: none;
+  }
+
+  #contact-section-info h1 {
+    position: absolute;
+    left: 125%;
+    top: 30%;
+    width: 200px;
+    font-size: 35px;
   }
   #contact-section-info {
     position: relative;
+    top: 95%;
     right: 200px;
   }
 
   .contact-section article {
+    margin-bottom: 200px;
     width: 550px;
   }
   .contact-form {
     width: 300px;
+  }
+
+  #contact-section-info {
+    position: absolute;
+    right: 50%;
   }
 
   #comments {
@@ -283,7 +291,7 @@
   #about-section-wrapper {
     position: relative;
     right: 45px;
-    /* width: 1200px; */
-    margin-top: 625px;
+
+    margin-top: 475px;
   }
 }
