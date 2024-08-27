@@ -1,3 +1,5 @@
+/* Contact styling for Contact.html */
+
 .contact-section h1 {
   display: flex;
   justify-content: center;
@@ -13,7 +15,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: 4em;
+  top: 2em;
   left: 50%;
   transform: translateX(-50%);
 }

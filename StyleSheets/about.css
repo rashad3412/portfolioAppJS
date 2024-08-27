@@ -6,13 +6,16 @@
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  margin-top: 40%;
+  margin-top: 20%;
   margin-left: 10px;
   width: 350px;
   height: 210px;
 }
-.about-section h2 {
-  margin-bottom: 10px;
+.about-section span {
+  position: relative;
+  bottom: 15px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .about-section button {

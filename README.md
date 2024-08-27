@@ -1,1 +1,3 @@
 # portfolioAppJS
+
+created a portfolio page using pure vanilla Javascript used functions, loops, varible declarations and more....

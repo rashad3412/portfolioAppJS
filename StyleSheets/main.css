@@ -115,7 +115,7 @@ a {
   position: relative;
   width: 350px;
   margin-left: 10px;
-  margin-top: 150px;
+  margin-top: 100px;
   /* border: solid black 2px; */
 }
 
@@ -131,6 +131,14 @@ a {
   margin-top: 15px;
   font-size: 1.3rem;
   color: #fff;
+}
+
+.main-content-section p {
+  position: relative;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  /* border: solid black 2px; */
 }
 .main-content-section button {
   font-family: "Poppins", sans-serif;
@@ -163,7 +171,7 @@ a {
 .container :nth-child(1) {
   position: absolute;
   bottom: 10px;
-  top: -35%;
+  top: -25%;
   z-index: -1;
   transform: translateX(40px);
 }

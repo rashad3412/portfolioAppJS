@@ -124,6 +124,7 @@
   }
 }
 
+/* media query to not display navbar 2 and circles in the corner of pages */
 @media only screen and (max-width: 1023px) {
   .navbar-2 {
     display: none;
@@ -134,6 +135,7 @@
   }
 }
 
+/* Media Query going down starting wtih the body and working from index.html project.html about.html and contact.html in that order */
 @media only screen and (min-width: 1024px) {
   body {
     width: 80%;
@@ -157,22 +159,28 @@
     top: 95px;
     width: 110%;
     bottom: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   #main-content-wrapper {
     display: flex;
     align-items: center;
   }
+  #main-content-text {
+    max-width: fit-content;
+    width: 450px;
+  }
 
   .main-content-circle {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     background-color: #e4f392;
     width: 450px;
     height: 450px;
@@ -266,6 +274,7 @@
   #contact-section-info {
     position: absolute;
     right: 50%;
+    margin-top: 50px;
   }
 
   #comments {
@@ -291,7 +300,6 @@
   #about-section-wrapper {
     position: relative;
     right: 45px;
-
     margin-top: 475px;
   }
 }
