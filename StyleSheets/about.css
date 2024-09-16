@@ -37,7 +37,7 @@
 .about-section-circle :nth-child(1) {
   position: absolute;
   bottom: 10px;
-  top: 10%;
+  top: 8%;
   width: 35px;
   height: 35px;
   z-index: -1;

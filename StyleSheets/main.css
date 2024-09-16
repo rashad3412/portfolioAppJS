@@ -246,3 +246,7 @@ a {
 #main-content-text {
   margin-right: 10px;
 }
+
+a button {
+  cursor: pointer;
+}
