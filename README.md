@@ -17,10 +17,6 @@ This is a fully responsive personal portfolio website built using **HTML**, **CS
 
 You can view the live version of the project [here](https://rashadportfolio.netlify.app/).
 
-## Screenshots
-
-![Portfolio Screenshot](https://via.placeholder.com/800x400)
-
 ## Technologies Used
 
 - **HTML5**
